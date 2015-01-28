@@ -8,6 +8,7 @@ public class Position
 		//jersey numbers
 		System.out.println("This program will generate a volleyball game. It will do a play-by-play on your team, then it will print out the score.");
 		SettersPosition.setBall();
+		Score.generateScore();
 		}
 
 	}
