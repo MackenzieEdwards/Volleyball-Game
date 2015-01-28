@@ -1,7 +1,6 @@
 
-public class Outside extends HittersPosition
+public class Midde extends HittersPosition
 	{
-//	Hits from the left
 	public static void killBall()
 		{
 		//hitter killed the ball
@@ -18,5 +17,4 @@ public class Outside extends HittersPosition
 		{
 		//hitter was blocked
 		}
-//	passes out of the middle
 	}

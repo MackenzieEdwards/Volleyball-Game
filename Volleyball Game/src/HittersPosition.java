@@ -1,5 +1,9 @@
 
 public class HittersPosition extends Position
 	{
-	//Hit Ball
+	public static void hitBall()
+		{
+		
+		}
+	
 	}
