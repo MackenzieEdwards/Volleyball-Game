@@ -1,6 +1,10 @@
-
-public class DS extends PassersPosition
+public class DS extends PassersPosition {
+	public static void passBall()
 	{
-//	hits from the back row
-//	passes/dig from the middle
+		System.out.println("The passer passes the ball");
 	}
+
+	public static void digBall() {
+		System.out.println("The passer digs the ball");
+	}
+}
