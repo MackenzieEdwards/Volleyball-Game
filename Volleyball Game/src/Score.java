@@ -1,8 +1,5 @@
-public class Score {
-
+public class Score extends Position{
 	public static void generateScore() {
-		int yourTeam = 0;
-		int myTeam = 0;
 		for (int i = 0; i <= 50; i++) {
 			int x = (int) (Math.random() * 2);
 
@@ -21,6 +18,8 @@ public class Score {
 			}
 		}
 		System.out.println("The final score is: " + myTeam + "-" + yourTeam);
+		System.out.print("Total points played: ");
+		System.out.println(myTeam + yourTeam);
 		System.out.println();
 	}
 }
