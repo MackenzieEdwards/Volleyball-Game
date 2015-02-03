@@ -18,12 +18,11 @@ public class setter extends SettersPosition {
 		}
 	}
 
-	// set using hands
+
 	public static void setToMiddle() {
 		System.out.println("The setter sets to the middle.");
 	}
 
-	// set by passing the ball
 	public static void setToOutside() {
 		System.out.println("The setter sets to the outside.");
 	}
