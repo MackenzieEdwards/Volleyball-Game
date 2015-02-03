@@ -2,23 +2,38 @@ public class Middle extends HittersPosition {
 
 	public static void whatHappendsToBall() {
 		for (int i = 0; i < 1; i++) {
-			int v = (int) (Math.random() * 4);
+			int v = (int) (Math.random() * 6);
 
 			if (v == 0) {
 				killBall();
-				
+				System.out.println("Won Point.");
+				wonPoint++;
+
 			}
 			if (v == 1) {
 				hitInNet();
-				
+				System.out.println("Lost Point.");
+
 			}
 			if (v == 2) {
 				hitOut();
-				
+				System.out.println("Lost Point.");
+
 			}
 			if (v == 3) {
 				blockedBall();
-				
+				System.out.println("Lost Point.");
+			}
+			if (v == 4) {
+				killBall();
+				System.out.println("Won Point.");
+				wonPoint++;
+
+			}
+			if (v == 5) {
+				killBall();
+				System.out.println("Won Point.");
+				wonPoint++;
 			}
 		}
 	}

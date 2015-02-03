@@ -8,12 +8,12 @@ public class Score extends Position{
 			} else {
 				yourTeam++;
 			}
-			System.out.println(myTeam + "-" + yourTeam);
+			//System.out.println(myTeam + "-" + yourTeam);
 			if (myTeam == 25) {
-				System.out.println("You won the game!!!");
+				//System.out.println("You won the game!!!");
 				break;
 			} else if (yourTeam == 25) {
-				System.out.println("You lost!");
+				//System.out.println("You lost!");
 				break;
 			}
 		}
