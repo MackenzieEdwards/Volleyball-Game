@@ -1,6 +1,6 @@
 public class setter extends SettersPosition {
 	public static void setBall() {
-		for (int i = 0; i < 5; i++) {
+
 			int x = (int) (Math.random() * 2);
 
 			if (x == 0) {
@@ -15,7 +15,7 @@ public class setter extends SettersPosition {
 				setToRightside();
 
 			}
-		}
+		
 	}
 
 

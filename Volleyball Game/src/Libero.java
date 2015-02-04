@@ -1,6 +1,5 @@
 public class Libero extends PassersPosition {
 	public static void passBall() {
-		for (int i = 0; i < 1; i++) {
 			int v = (int) (Math.random() * 3);
 
 			if (v == 0) {
@@ -14,7 +13,6 @@ public class Libero extends PassersPosition {
 				okPass();
 			}
 		}
-	}
 
 	public static void goodPass() {
 		System.out.println("The libero made a good pass!");
