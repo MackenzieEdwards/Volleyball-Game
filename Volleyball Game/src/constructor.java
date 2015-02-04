@@ -1,57 +1,44 @@
-public class constructor {
-	private int height;
-	private String color;
-	private int number;
-	private String state;
-	private String name;
+public class constructor
+	{
+	private int kills;
+	private int attempts;
+	private int errors;
 
-	public constructor(String c, int h, int n, String s, String na) {
-		height = h;
-		color = c;
-		number = n;
-		state = s;
-		name = na;
+	public constructor(int k, int a, int e)
+		{
+		kills = k;
+		attempts = a;
+		errors = e;
+		}
+
+	public int getKills()
+		{
+		return kills;
+		}
+
+	public void setKills(int kills)
+		{
+		this.kills = kills;
+		}
+
+	public int getAttempts()
+		{
+		return attempts;
+		}
+
+	public void setAttempts(int attempts)
+		{
+		this.attempts = attempts;
+		}
+
+	public int getErrors()
+		{
+		return errors;
+		}
+
+	public void setErrors(int errors)
+		{
+		this.errors = errors;
+		}
+
 	}
-
-	public int getHeight()
-		{
-		return height;
-		}
-
-	public void setHeight(int height)
-		{
-		this.height = height;
-		}
-
-	public String getColor()
-		{
-		return color;
-		}
-
-	public void setColor(String color)
-		{
-		this.color = color;
-		}
-
-	public int getNumber()
-		{
-		return number;
-		}
-
-	public void setNumber(int number)
-		{
-		this.number = number;
-		}
-
-	public String getState()
-		{
-		return state;
-		}
-
-	public void setState(String state)
-		{
-		this.state = state;
-		}
-
-	
-}

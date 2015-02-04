@@ -2,7 +2,7 @@ public class Rightside extends HittersPosition {
 	public static void whatHappendsToBall() {
 
 		//for (int i = 0; i < 1; i++) {
-			int x = (int) (Math.random() * 6) + 1;
+			int x = (int) (Math.random() * 5) + 1;
 
 			if (x == 1) {
 				killBall();
