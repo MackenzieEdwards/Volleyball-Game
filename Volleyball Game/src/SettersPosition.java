@@ -1,9 +1,17 @@
-
-public class SettersPosition 
+public class SettersPosition
 	{
-//	 setsBall
-	public static void setBall()
+	public static void setToMiddle()
 		{
-		System.out.println("The setter sets the ball.");
+		System.out.println("The setter sets to the middle.");
+		}
+
+	public static void setToOutside()
+		{
+		System.out.println("The setter sets to the outside.");
+		}
+
+	public static void setToRightside()
+		{
+		System.out.println("The setter sets to the rightside.");
 		}
 	}

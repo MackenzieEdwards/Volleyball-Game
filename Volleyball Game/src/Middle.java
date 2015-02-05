@@ -3,7 +3,7 @@ public class Middle extends HittersPosition
 
 	public static void whatHappendsToBall()
 		{
-		int v = (int) (Math.random() * 5) + 1;
+		int v = (int) (Math.random() * 6) + 1;
 
 		if (v == 1)
 			{
@@ -36,7 +36,7 @@ public class Middle extends HittersPosition
 			}
 		if (v == 6)
 			{
-			killBall();
+			HittersPosition.otherTeamError();
 			wonPoint++;
 			}
 

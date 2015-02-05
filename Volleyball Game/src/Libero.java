@@ -1,28 +1,37 @@
-public class Libero extends PassersPosition {
-	public static void passBall() {
-			int v = (int) (Math.random() * 3);
+public class Libero extends PassersPosition
+	{
+	public static void passBall()
+		{
+		int v = (int) (Math.random() * 3);
 
-			if (v == 0) {
-				goodPass();
+		if (v == 0)
+			{
+			goodPass();
 
 			}
-			if (v == 1) {
-				badPass();
+		if (v == 1)
+			{
+			badPass();
 			}
-			if (v == 2) {
-				okPass();
+		if (v == 2)
+			{
+			okPass();
 			}
 		}
 
-	public static void goodPass() {
+	public static void goodPass()
+		{
 		System.out.println("The libero made a good pass!");
-	}
+		}
 
-	public static void badPass() {
+	public static void badPass()
+		{
 		System.out.println("The libero made a bad pass.");
-	}
-	public static void okPass() {
-		System.out.println("The libero made an OK pass.");
-	}
+		}
 
-}
+	public static void okPass()
+		{
+		System.out.println("The libero made an OK pass.");
+		}
+
+	}

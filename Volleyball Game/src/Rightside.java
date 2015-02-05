@@ -1,51 +1,66 @@
-public class Rightside extends HittersPosition {
-	public static void whatHappendsToBall() {
+public class Rightside extends HittersPosition
+	{
+	public static void whatHappendsToBall()
+		{
 
-		int x = (int) (Math.random() * 5) + 1;
+		int x = (int) (Math.random() * 6) + 1;
 
-		if (x == 1) {
+		if (x == 1)
+			{
 			killBall();
 
 			wonPoint++;
 
-		}
-		if (x == 2) {
+			}
+		if (x == 2)
+			{
 			hitInNet();
 			lostPoint++;
 
-		}
-		if (x == 3) {
+			}
+		if (x == 3)
+			{
 			hitOut();
 			lostPoint++;
-		}
-		if (x == 4) {
+			}
+		if (x == 4)
+			{
 			blockedBall();
 			lostPoint++;
-		}
-		if (x == 5) {
+			}
+		if (x == 5)
+			{
 			killBall();
 			wonPoint++;
 
+			}
+		if (x == 6)
+			{
+			HittersPosition.otherTeamError();
+			wonPoint++;
+			}
 		}
 
-	}
-
 	// kill
-	public static void killBall() {
+	public static void killBall()
+		{
 		System.out.println("The rightside got a kill!");
-	}
+		}
 
 	// error
-	public static void hitInNet() {
+	public static void hitInNet()
+		{
 		System.out.println("The rightside hit the ball in the net.");
-	}
+		}
 
-	public static void hitOut() {
+	public static void hitOut()
+		{
 		System.out.println("The rightside hit the ball out.");
-	}
+		}
 
 	// blocked
-	public static void blockedBall() {
+	public static void blockedBall()
+		{
 		System.out.println("The rightside was blocked.");
+		}
 	}
-}

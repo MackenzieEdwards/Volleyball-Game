@@ -1,70 +1,65 @@
-public class Outside extends HittersPosition {
-	public static void whatHappendsToBall() {
+public class Outside extends HittersPosition
+	{
+	public static void whatHappendsToBall()
+		{
 
-		// for (int i = 0; i < 1; i++)
-		// {
-		int x = (int) (Math.random() * 5) + 1;
+		int x = (int) (Math.random() * 6) + 1;
 
-		if (x == 1) {
+		if (x == 1)
+			{
 			killBall();
-			// System.out.println("Won Point.");
 			wonPoint++;
+			}
 
-		}
-		if (x == 2) {
+		if (x == 2)
+			{
 			hitInNet();
-			// System.out.println("Lost Point.");
 			lostPoint++;
+			}
 
-		}
-		if (x == 3) {
+		if (x == 3)
+			{
 			hitOut();
-			// System.out.println("Lost Point.");
 			lostPoint++;
+			}
 
-		}
-		if (x == 4) {
+		if (x == 4)
+			{
 			blockedBall();
-			// System.out.println("Lost Point.");
 			lostPoint++;
-		}
-		if (x == 5) {
+			}
+
+		if (x == 5)
+			{
 			killBall();
-			// System.out.println("Won Point.");
 			wonPoint++;
+			}
+
+		if (x == 6)
+			{
+			HittersPosition.otherTeamError();
+			wonPoint++;
+			}
+
 		}
 
-		// if (wonPoint == 25)
-		// {
-		// // System.out.println("You won the game!");
-		// break;
-		// }
-		// if (lostPoint == 25)
-		// {
-		// // System.out.println("You lost the game!");
-		// break;
-		// }
-		// }
-
-	}
-
-	// kill
-	public static void killBall() {
+	public static void killBall()
+		{
 		System.out.println("The outside got a kill!");
-	}
+		}
 
-	// error
-	public static void hitInNet() {
+	public static void hitInNet()
+		{
 		System.out.println("The outside hit the ball in the net.");
-	}
+		}
 
-	// hits out
-	public static void hitOut() {
+	public static void hitOut()
+		{
 		System.out.println("The outside hit the ball out.");
-	}
+		}
 
-	// blocked
-	public static void blockedBall() {
+	public static void blockedBall()
+		{
 		System.out.println("The outside was blocked.");
+		}
 	}
-}
