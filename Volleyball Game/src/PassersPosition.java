@@ -1,5 +1,5 @@
 
-public class PassersPosition extends Position
+public class PassersPosition 
 	{
 //	Pass the Ball
 	public static void passBall()

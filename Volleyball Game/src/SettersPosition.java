@@ -1,5 +1,5 @@
 
-public class SettersPosition extends Position
+public class SettersPosition 
 	{
 //	 setsBall
 	public static void setBall()

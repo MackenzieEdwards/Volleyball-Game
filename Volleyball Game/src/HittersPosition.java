@@ -1,4 +1,4 @@
-public class HittersPosition extends Position {
+public class HittersPosition  extends Position{
 
 	public static void killBall() {
 		System.out.println("The hitter got a kill!");

@@ -1,47 +1,32 @@
 public class Rightside extends HittersPosition {
 	public static void whatHappendsToBall() {
 
-		//for (int i = 0; i < 1; i++) {
-			int x = (int) (Math.random() * 5) + 1;
+		int x = (int) (Math.random() * 5) + 1;
 
-			if (x == 1) {
-				killBall();
-				// System.out.println("Won Point.");
-				wonPoint++;
+		if (x == 1) {
+			killBall();
 
-			}
-			if (x == 2) {
-				hitInNet();
-				// System.out.println("Lost Point.");
-				lostPoint++;
+			wonPoint++;
 
-			}
-			if (x == 3) {
-				hitOut();
-				// System.out.println("Lost Point.");
-				lostPoint++;
-			}
-			if (x == 4) {
-				blockedBall();
-				// System.out.println("Lost Point.");
-				lostPoint++;
-			}
-			if (x == 5) {
-				killBall();
-				// System.out.println("Won Point.");
-				wonPoint++;
+		}
+		if (x == 2) {
+			hitInNet();
+			lostPoint++;
 
-			}
-//			if (wonPoint == 25) {
-//				// System.out.println("You won the game!");
-//				break;
-//			}
-//			if (lostPoint == 25) {
-//				// System.out.println("You lost the game!");
-//				break;
-//			}
-//
-//		}
+		}
+		if (x == 3) {
+			hitOut();
+			lostPoint++;
+		}
+		if (x == 4) {
+			blockedBall();
+			lostPoint++;
+		}
+		if (x == 5) {
+			killBall();
+			wonPoint++;
+
+		}
 
 	}
 

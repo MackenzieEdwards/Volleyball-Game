@@ -1,23 +1,22 @@
-public class setter extends SettersPosition {
+public class Setter extends SettersPosition {
 	public static void setBall() {
 
-			int x = (int) (Math.random() * 2);
+		int x = (int) (Math.random() * 2);
 
-			if (x == 0) {
-				setToMiddle();
+		if (x == 0) {
+			setToMiddle();
 
-			}
-			if (x == 1) {
-				setToOutside();
+		}
+		if (x == 1) {
+			setToOutside();
 
-			}
-			if (x == 2) {
-				setToRightside();
+		}
+		if (x == 2) {
+			setToRightside();
 
-			}
-		
+		}
+
 	}
-
 
 	public static void setToMiddle() {
 		System.out.println("The setter sets to the middle.");
