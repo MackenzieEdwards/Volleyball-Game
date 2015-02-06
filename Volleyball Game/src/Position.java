@@ -1,8 +1,13 @@
+import java.util.ArrayList;
+
 public class Position
 	{
 
 	static int wonPoint = 0;
 	static int lostPoint = 0;
+	static ArrayList<Integer> kills = new ArrayList<Integer>();
+	static ArrayList<Integer> attempts = new ArrayList<Integer>();
+	static ArrayList<Integer> errors = new ArrayList<Integer>();
 
 	public static void main(String[] args) throws InterruptedException
 		{
@@ -13,10 +18,11 @@ public class Position
 		System.out
 				.println("At the end of the game it will give you the stats of the final game.");
 		System.out.println();
-		thePlay();
+		thePlay(lostPoint, lostPoint, lostPoint);
 		}
 
-	public static void thePlay() throws InterruptedException
+	public static void thePlay(int hitterKills, int hitterAttempts,
+			int hitterErrors) throws InterruptedException
 		{
 			{
 			do
@@ -28,22 +34,24 @@ public class Position
 
 					Libero.passBall();
 					Setter.setToMiddle();
-					Middle.whatHappendsToBall();
+					Middle.whatHappendsToBall(hitterKills, hitterAttempts,
+							hitterErrors);
 					}
 				if (x == 2)
 					{
 					DS.passBall();
 					Setter.setToOutside();
-					Outside.whatHappendsToBall();
+					Outside.whatHappendsToBall(hitterKills, hitterAttempts,
+							hitterErrors);
 					}
 				if (x == 3)
 					{
 					Libero.passBall();
 					Setter.setToRightside();
-					Rightside.whatHappendsToBall();
+					Rightside.whatHappendsToBall(hitterKills, hitterAttempts,
+							hitterErrors);
 					}
-				System.out
-						.println("Score: " + wonPoint + "-" + lostPoint + ".");
+				System.out.println("Score: " + wonPoint + "-" + lostPoint + ".");
 				Thread.sleep(3000);
 				System.out.println();
 
@@ -53,8 +61,7 @@ public class Position
 				{
 				System.out.println("You won the game!");
 
-				} 
-			else
+				} else
 
 				{
 				System.out.println("I'm sorry you lost the game.");

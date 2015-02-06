@@ -1,63 +1,64 @@
 public class Middle extends HittersPosition
 	{
 
-	public static void whatHappendsToBall()
+	public static void whatHappendsToBall(int hitterKills, int attempts, int errors)
 		{
-		int v = (int) (Math.random() * 6) + 1;
+		int x = (int) (Math.random() * 5) + 1;
 
-		if (v == 1)
+		if (x == 1)
 			{
 			killBall();
 			wonPoint++;
+			// kill and attempt
 			}
 
-		if (v == 2)
+		if (x == 2)
 			{
 			hitInNet();
 			lostPoint++;
-
+			//error and attempt
 			}
-		if (v == 3)
+
+		if (x == 3)
 			{
 			hitOut();
 			lostPoint++;
-
+			//error and attempt
 			}
-		if (v == 4)
+
+		if (x == 4)
 			{
 			blockedBall();
 			lostPoint++;
+			//error and attempt
 			}
-		if (v == 5)
+
+		if (x == 5)
 			{
 			killBall();
 			wonPoint++;
+			// kill and attempt
+			}
 
-			}
-		if (v == 6)
-			{
-			HittersPosition.otherTeamError();
-			wonPoint++;
-			}
 
 		}
 
-	public static void killBall()
+	public static void killBall(int hitterKills, int hitterAttempts, int hitterErrors)
 		{
 		System.out.println("The middle got a kill!");
 		}
 
-	public static void hitInNet()
+	public static void hitInNet(int hitterKills, int hitterAttempts, int hitterErrors)
 		{
 		System.out.println("The middle hit the ball in the net.");
 		}
 
-	public static void hitOut()
+	public static void hitOut(int hitterKills, int hitterAttempts, int hitterErrors)
 		{
 		System.out.println("The middle hit the ball out.");
 		}
 
-	public static void blockedBall()
+	public static void blockedBall(int hitterKills, int hitterAttempts, int hitterErrors)
 		{
 		System.out.println("The middle was blocked.");
 		}
