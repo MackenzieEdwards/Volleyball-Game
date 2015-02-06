@@ -33,7 +33,7 @@ public class Rightside extends HittersPosition
 			// error and attempt
 			}
 
-		if (x == 5)
+		if (x == 5) 
 			{
 			killBall();
 			wonPoint++;

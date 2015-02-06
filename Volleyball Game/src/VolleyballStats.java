@@ -18,7 +18,7 @@ public class VolleyballStats extends Statics
 
 	public void setKills(int kills)
 		{
-		this.hitterKills = kills;
+		this.hitterKills = kills; 
 		}
 
 	public int getAttempts()

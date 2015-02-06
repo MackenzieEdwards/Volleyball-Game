@@ -34,7 +34,7 @@ public class Middle extends HittersPosition
 			}
 
 		if (x == 5)
-			{
+			{ 
 			killBall();
 			wonPoint++;
 			// kill and attempt

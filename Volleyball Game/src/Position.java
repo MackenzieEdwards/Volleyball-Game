@@ -35,7 +35,7 @@ public class Position
 					Libero.passBall();
 					Setter.setToMiddle();
 					Middle.whatHappendsToBall(hitterKills, hitterAttempts,
-							hitterErrors);
+							hitterErrors); 
 					}
 				if (x == 2)
 					{
