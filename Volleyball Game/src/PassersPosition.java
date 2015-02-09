@@ -1,13 +1,17 @@
 public class PassersPosition
 	{
-	// Pass the Ball
-	public static void passBall()
+	public static void goodPass()
 		{
-		System.out.println("The passer passes the ball");
+		System.out.println("The passer made a good pass!");
 		}
 
-	public static void digBall()
+	public static void badPass()
 		{
-		System.out.println("The passer digs the ball");
+		System.out.println("The passer made a bad pass.");
+		}
+
+	public static void okPass()
+		{
+		System.out.println("The passer made an OK pass.");
 		}
 	}

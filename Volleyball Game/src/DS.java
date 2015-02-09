@@ -2,23 +2,21 @@ public class DS extends PassersPosition
 	{
 	public static void passBall()
 		{
-		for (int i = 0; i < 1; i++)
+
+		int v = (int) (Math.random() * 3) + 1;
+
+		if (v == 1)
 			{
-			int v = (int) (Math.random() * 3);
+			goodPass();
 
-			if (v == 0)
-				{
-				goodPass();
-
-				}
-			if (v == 1)
-				{
-				badPass();
-				}
-			if (v == 2)
-				{
-				okPass();
-				}
+			}
+		if (v == 2)
+			{
+			badPass();
+			}
+		if (v == 3)
+			{
+			okPass();
 			}
 		}
 

@@ -20,11 +20,4 @@ public class HittersPosition extends Position
 		{
 		System.out.println("The hitter was blocked.");
 		}
-
-	public static void otherTeamError()
-		{
-		System.out.println("The other team made an error!");
-
-		}
-
 	}

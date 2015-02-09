@@ -18,11 +18,10 @@ public class Position
 		System.out
 				.println("At the end of the game it will give you the stats of the final game.");
 		System.out.println();
-		thePlay(lostPoint, lostPoint, lostPoint);
+		thePlay();
 		}
 
-	public static void thePlay(int hitterKills, int hitterAttempts,
-			int hitterErrors) throws InterruptedException
+	public static void thePlay() throws InterruptedException
 		{
 			{
 			do
@@ -34,24 +33,22 @@ public class Position
 
 					Libero.passBall();
 					Setter.setToMiddle();
-					Middle.whatHappendsToBall(hitterKills, hitterAttempts,
-							hitterErrors); 
+					Middle.whatHappendsToBall();
 					}
 				if (x == 2)
 					{
 					DS.passBall();
 					Setter.setToOutside();
-					Outside.whatHappendsToBall(hitterKills, hitterAttempts,
-							hitterErrors);
+					Outside.whatHappendsToBall();
 					}
 				if (x == 3)
 					{
 					Libero.passBall();
 					Setter.setToRightside();
-					Rightside.whatHappendsToBall(hitterKills, hitterAttempts,
-							hitterErrors);
+					Rightside.whatHappendsToBall();
 					}
-				System.out.println("Score: " + wonPoint + "-" + lostPoint + ".");
+				System.out
+						.println("Score: " + wonPoint + "-" + lostPoint + ".");
 				Thread.sleep(3000);
 				System.out.println();
 
@@ -61,8 +58,8 @@ public class Position
 				{
 				System.out.println("You won the game!");
 
-				} else
-
+				} 
+			else
 				{
 				System.out.println("I'm sorry you lost the game.");
 

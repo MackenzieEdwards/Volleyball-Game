@@ -3,23 +3,21 @@ public class Setter extends SettersPosition
 	public static void setBall()
 		{
 
-		int x = (int) (Math.random() * 2);
+		int x = (int) (Math.random() * 3) + 1;
 
-		if (x == 0)
-			{
-			setToMiddle();
-
-			}
 		if (x == 1)
 			{
-			setToOutside();
-
+			setToMiddle();
 			}
+
 		if (x == 2)
 			{
-			setToRightside();
-
+			setToOutside();
 			}
 
+		if (x == 3)
+			{
+			setToRightside();
+			}
 		}
 	}

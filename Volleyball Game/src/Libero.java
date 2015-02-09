@@ -2,18 +2,18 @@ public class Libero extends PassersPosition
 	{
 	public static void passBall()
 		{
-		int v = (int) (Math.random() * 3);
+		int v = (int) (Math.random() * 3) + 1;
 
-		if (v == 0)
+		if (v == 1)
 			{
 			goodPass();
 
 			}
-		if (v == 1)
+		if (v == 2)
 			{
 			badPass();
 			}
-		if (v == 2)
+		if (v == 3)
 			{
 			okPass();
 			}

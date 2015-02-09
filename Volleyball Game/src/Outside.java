@@ -1,6 +1,6 @@
 public class Outside extends HittersPosition
 	{
-	public static void whatHappendsToBall(int hitterKills, int hitterAttempts, int hitterErrors)
+	public static void whatHappendsToBall()
 		{
 
 		int x = (int) (Math.random() * 5) + 1;
@@ -42,22 +42,22 @@ public class Outside extends HittersPosition
 
 		}
 
-	public static void killBall(int hitterKills, int hitterAttempts, int hitterErrors)
+	public static void killBall()
 		{
 		System.out.println("The outside got a kill!");
 		}
 
-	public static void hitInNet(int hitterKills, int hitterAttempts, int hitterErrors)
+	public static void hitInNet()
 		{
 		System.out.println("The outside hit the ball in the net.");
 		}
 
-	public static void hitOut(int hitterKills, int hitterAttempts, int hitterErrors)
+	public static void hitOut()
 		{
 		System.out.println("The outside hit the ball out.");
 		}
 
-	public static void blockedBall(int hitterKills, int hitterAttempts, int hitterErrors)
+	public static void blockedBall()
 		{
 		System.out.println("The outside was blocked.");
 		}
