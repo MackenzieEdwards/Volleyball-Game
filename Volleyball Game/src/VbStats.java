@@ -1,44 +1,44 @@
-public class VbStats //extends Statics
+public class VbStats 
 	{
-	private int hitterKills;
-	private int hitterAttempts;
-	private int hitterErrors;
+	private int kills;
+	private int attempts;
+	private int errors;
 
 	public VbStats(int k, int a, int e)
 		{
-		hitterKills = k;
-		hitterAttempts = a;
-		hitterErrors = e;
+		kills = k;
+		attempts = a;
+		errors = e;
 		}
 
 	public int getKills()
 		{
-		return hitterKills;
+		return kills;
 		}
 
 	public void setKills(int k)
 		{
-		this.hitterKills = k; 
+		this.kills = k; 
 		}
 
 	public int getAttempts()
 		{
-		return hitterAttempts;
+		return attempts;
 		}
 
 	public void setAttempts(int a)
 		{
-		this.hitterAttempts = a;
+		this.attempts = a;
 		}
 
 	public int getErrors()
 		{
-		return hitterErrors;
+		return errors;
 		}
 
 	public void setErrors(int e)
 		{
-		this.hitterErrors = e;
+		this.errors = e;
 		}
 
 	}

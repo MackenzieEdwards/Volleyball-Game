@@ -1,12 +1,25 @@
 public class Rightside extends HittersPosition
 	{
-	public static void whatHappendsToBall()
+	public static void whatHappendsToBall(VbStats rs)
 		{
 
-		int x = (int) (Math.random() * 5) + 1;
+		int x = (int) (Math.random() * 6) + 1;
+		int kills = 0;
+		int attempts = 0;
+		int errors = 0;
 
 		if (x == 1)
 			{
+			kills = rs.getKills();
+			attempts = rs.getAttempts();
+			errors = rs.getErrors();
+
+			kills = kills + 1;
+			attempts = attempts + 1;
+
+			rs.setKills(kills);
+			rs.setAttempts(attempts);
+
 			killBall();
 			wonPoint++;
 			// kill and attempt
@@ -14,6 +27,16 @@ public class Rightside extends HittersPosition
 
 		if (x == 2)
 			{
+			kills = rs.getKills();
+			attempts = rs.getAttempts();
+			errors = rs.getErrors();
+
+			errors = errors + 1;
+			attempts = attempts + 1;
+
+			rs.setErrors(errors);
+			rs.setAttempts(attempts);
+			
 			hitInNet();
 			lostPoint++;
 			// error and attempt
@@ -35,6 +58,32 @@ public class Rightside extends HittersPosition
 
 		if (x == 5)
 			{
+			kills = rs.getKills();
+			attempts = rs.getAttempts();
+			errors = rs.getErrors();
+
+			kills = kills + 1;
+			attempts = attempts + 1;
+
+			rs.setKills(kills);
+			rs.setAttempts(attempts);
+
+			killBall();
+			wonPoint++;
+			// kill and attempt
+			}
+		if (x == 6)
+			{
+			kills = rs.getKills();
+			attempts = rs.getAttempts();
+			errors = rs.getErrors();
+
+			kills = kills + 1;
+			attempts = attempts + 1;
+
+			rs.setKills(kills);
+			rs.setAttempts(attempts);
+
 			killBall();
 			wonPoint++;
 			// kill and attempt
