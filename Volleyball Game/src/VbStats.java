@@ -1,10 +1,10 @@
-public class VolleyballStats extends Statics
+public class VbStats //extends Statics
 	{
 	private int hitterKills;
 	private int hitterAttempts;
 	private int hitterErrors;
 
-	public VolleyballStats(int k, int a, int e)
+	public VbStats(int k, int a, int e)
 		{
 		hitterKills = k;
 		hitterAttempts = a;
@@ -16,9 +16,9 @@ public class VolleyballStats extends Statics
 		return hitterKills;
 		}
 
-	public void setKills(int kills)
+	public void setKills(int k)
 		{
-		this.hitterKills = kills; 
+		this.hitterKills = k; 
 		}
 
 	public int getAttempts()
@@ -26,9 +26,9 @@ public class VolleyballStats extends Statics
 		return hitterAttempts;
 		}
 
-	public void setAttempts(int attempts)
+	public void setAttempts(int a)
 		{
-		this.hitterAttempts = attempts;
+		this.hitterAttempts = a;
 		}
 
 	public int getErrors()
@@ -36,9 +36,9 @@ public class VolleyballStats extends Statics
 		return hitterErrors;
 		}
 
-	public void setErrors(int errors)
+	public void setErrors(int e)
 		{
-		this.hitterErrors = errors;
+		this.hitterErrors = e;
 		}
 
 	}
