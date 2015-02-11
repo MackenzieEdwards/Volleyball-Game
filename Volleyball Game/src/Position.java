@@ -55,7 +55,7 @@ public class Position
 					}
 				System.out
 						.println("Score: " + wonPoint + "-" + lostPoint + ".");
-				// Thread.sleep(2000);
+				Thread.sleep(2000);
 
 				System.out.println();
 
